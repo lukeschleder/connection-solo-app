@@ -40,7 +40,9 @@ class LoginPage extends Component {
             {this.props.errors.loginMessage}
           </h2>
         )}
+        
         <form onSubmit={this.login}>
+        <i className="fas fa-link fa-4x"></i>
           <h1>Login</h1>
           <div>
             <label htmlFor="username">

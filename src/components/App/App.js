@@ -16,6 +16,10 @@ import ProtectedRoute from '../ProtectedRoute/ProtectedRoute'
 import AboutPage from '../AboutPage/AboutPage';
 import UserPage from '../UserPage/UserPage';
 import InfoPage from '../InfoPage/InfoPage';
+import FormOne from '../FormOne/FormOne';
+import FormTwo from '../FormTwo/FormTwo';
+import FormThree from '../FormThree/FormThree';
+import FormFour from '../FormFour/FormFour';
 
 import './App.css';
 
@@ -54,6 +58,26 @@ class App extends Component {
               exact
               path="/info"
               component={InfoPage}
+            />
+            <ProtectedRoute
+              exact
+              path="/formone"
+              component={FormOne}
+            />
+            <ProtectedRoute
+              exact
+              path="/formtwo"
+              component={FormTwo}
+            />
+            <ProtectedRoute
+              exact
+              path="/formthree"
+              component={FormThree}
+            />
+            <ProtectedRoute
+              exact
+              path="/formfour"
+              component={FormFour}
             />
             {/* If none of the other routes matched, we will show a 404. */}
             <Route render={() => <h1>404</h1>} />

@@ -9,9 +9,11 @@ body {
 }
 
 form {
-    background-color: #dbd5d5;
-    width: 30%;
-    height: 250px;
+    text-align: center;
+    color: black;
+    background-color: lightgrey;
+    width: 50%;
+    height: 50%;
     margin: 20px auto;
     padding: 25px;
     border-radius: 2px;
@@ -23,7 +25,7 @@ input {
 }
 
 .log-in, .log-out, .register {
-  background-color: #00acb0;
+  background-color: teal;
   border-radius: 4px;
   color: #f8f8f8;
   min-height: 50px;
