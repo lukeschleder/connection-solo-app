@@ -31,7 +31,7 @@ class RegisterPage extends Component {
 
   render() {
     return (
-      <div>
+      <div id="registerDiv">
         {this.props.errors.registrationMessage && (
           <h2
             className="alert"
@@ -41,6 +41,7 @@ class RegisterPage extends Component {
           </h2>
         )}
         <form onSubmit={this.registerUser}>
+        <i class="fas fa-link fa-4x"></i>
           <h1>Register User</h1>
           <div>
             <label htmlFor="username">

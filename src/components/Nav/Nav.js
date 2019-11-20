@@ -6,9 +6,11 @@ import './Nav.css';
 
 const Nav = (props) => (
   <div className="nav">
+    
     <Link to="/home">
-      <h2 className="nav-title">Prime Solo Project</h2>
+      <h2 className="nav-title">Connection</h2>
     </Link>
+    <i className="fas fa-link fa-2x"></i>
     <div className="nav-right">
       <Link className="nav-link" to="/home">
         {/* Show this link if they are logged in or not,
