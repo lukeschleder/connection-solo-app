@@ -12,6 +12,8 @@ const formReducer = (state = {}, action) => {
         return{ ...state, moneysaved: action.payload}
     } else if (action.type === "TIME_SAVED"){
         return{ ...state, timesaved: action.payload}
+    } else if (action.type === "CLEAR_FORM"){
+        return {};
     }
     return state;
   };
