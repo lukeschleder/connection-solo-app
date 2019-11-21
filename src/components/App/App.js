@@ -20,6 +20,7 @@ import FormOne from '../FormOne/FormOne';
 import FormTwo from '../FormTwo/FormTwo';
 import FormThree from '../FormThree/FormThree';
 import FormFour from '../FormFour/FormFour';
+import FormReview from '../FormReview/FormReview';
 
 import './App.css';
 
@@ -79,10 +80,16 @@ class App extends Component {
               path="/formfour"
               component={FormFour}
             />
+            <ProtectedRoute
+              exact
+              path="/formreview"
+              component={FormReview}
+            />
             {/* If none of the other routes matched, we will show a 404. */}
             <Route render={() => <h1>404</h1>} />
           </Switch>
           <Footer />
+          
         </div>
       </Router>
   )}

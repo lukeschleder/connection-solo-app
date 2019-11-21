@@ -20,7 +20,7 @@ const UserPage = (props) => (
     <h1 id="welcome">
       Welcome, {props.user.username}!
     </h1>
-    <p>Congrats on making a change in your life!  To get the most value out of this app it is recommended to create connection goals by clicking the button below. </p>
+    <p>Congrats on making a change in your life!  To get the most value out of this app it is recommended to create connection goals.  Do so by clicking below! </p>
 
     <Link to= "/formone"><Button onClick={() => (goToFormOne())} variant="contained" size="small" color="primary">
       Create Connection Goals

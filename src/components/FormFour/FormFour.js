@@ -36,7 +36,7 @@ class FormFour extends Component {
         } else {
             this.props.dispatch({ type: "MONEY_SAVED", payload: this.state.moneySpent });
             this.props.dispatch({ type: "TIME_SAVED", payload: this.state.timeSpent });
-            this.props.history.push('/dashboard');
+            this.props.history.push('/formreview');
         }
     }
 
@@ -54,30 +54,32 @@ class FormFour extends Component {
                             <div>
                                 <TextField
                                     id="outlined-name"
-                                    label="Average money per day"
+                                    label="Average money"
                                     className="formTwo"
                                     onChange={this.inputMoneyHandler}
+                                    defaultValue={this.props.formReducer.moneysaved}
                                     placeholders="money"
                                     margin="normal"
                                     variant="outlined"
                                 />
                                 <TextField
                                     id="outlined-uncontrolled"
-                                    label="Average hours per day"
-                                    defaultValue=""
-                                    placeholder="hours"
+                                    label="Average hours"
+                                    defaultValue={this.props.formReducer.timesaved}
+                                    placeholder="time"
                                     className="formTwo"
                                     onChange={this.inputHoursHandler}
                                     margin="normal"
                                     variant="outlined"
                                 />
                             </div>
-                            <Button onClick={this.goBackToFormThree}variant="contained" type="submit">Back</Button>
+                            <Button onClick={this.goBackToFormThree}variant="contained" color="secondary"type="submit">Back</Button>
                         <Button variant="contained" type="submit">Next</Button>
                     </form>
                 </header>
                 <br />
                 <pre>{JSON.stringify(this.state, null, 2)}</pre>
+                <pre>{JSON.stringify( this.props.formReducer, null, 2)}</pre>
             </div>
 
         );

@@ -32,6 +32,10 @@ class FormOne extends Component {
         }
     }
 
+    goBackToHome = () => {
+        this.props.history.push('/home');
+    }
+
     render() {
         return (
             <div className="App">
@@ -40,15 +44,17 @@ class FormOne extends Component {
                     <form onSubmit={this.compileFeedback}>
                         <TextField
                             onChange={this.inputChangeHandler}
+                            defaultValue={this.props.formReducer.selfgoal}
                             label="Comments"
                             className="textField"
                             multiline
                             rows="5"
-                            defaultValue=""
                             margin="normal"
                             variant="outlined"
                             placeholder=""
                         />
+                        <br/>
+                        <Button color="secondary"onClick={this.goBackToHome}variant="contained" type="submit">Back</Button>
                         <Button variant="contained" type="submit">Next</Button>
                     </form>
                 </header>

@@ -72,10 +72,11 @@ class FormThree extends Component {
                                     <KeyboardDatePicker
                                         margin="normal"
                                         id="date-picker-dialog"
-                                        label="Date picker dialog"
+                                        label="Pick a Date"
                                         format="MM/dd/yyyy"
                                         value={this.state.date}
                                         onChange={this.handleDateChange}
+                                        defaultValue={this.props.formReducer.sobrietystartdate}
                                         KeyboardButtonProps={{
                                             'aria-label': 'change date',
                                         }}
@@ -84,7 +85,7 @@ class FormThree extends Component {
                             </MuiPickersUtilsProvider>
 
                         </div>
-                        <Button onClick={this.goBackToFormTwo} variant="contained" type="submit">Back</Button>
+                        <Button color="secondary"onClick={this.goBackToFormTwo} variant="contained" type="submit">Back</Button>
                         <Button variant="contained" type="submit">Next</Button>
                     </form>
                 </header>

@@ -57,21 +57,22 @@ class FormTwo extends Component {
                                     label="Name"
                                     className="formTwo"
                                     onChange={this.inputNameHandler}
+                                    defaultValue={this.props.formReducer.connectionname}
                                     margin="normal"
                                     variant="outlined"
                                 />
                                 <TextField
                                     id="outlined-uncontrolled"
                                     label="Phone Number"
-                                    defaultValue=""
                                     placeholder="123-456-7890"
                                     className="formTwo"
                                     onChange={this.inputPhoneNumberHandler}
+                                    defaultValue={this.props.formReducer.connectionphonenumber}
                                     margin="normal"
                                     variant="outlined"
                                 />
                             </div>
-                            <Button onClick={this.goBackToFormOne}variant="contained" type="submit">Back</Button>
+                            <Button color="secondary"onClick={this.goBackToFormOne}variant="contained" type="submit">Back</Button>
                         <Button variant="contained" type="submit">Next</Button>
                     </form>
                 </header>
