@@ -1,6 +1,11 @@
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0px;
+    
+}
+
+.bigDiv {
+    /* background-image: url(wet_rocks.jpeg); */
 }
 
 .alert {
@@ -11,8 +16,8 @@ body {
 form {
     text-align: center;
     color: black;
-    background-color: lightgrey;
-    width: 50%;
+    background-color: white;
+    width: 75%;
     height: 50%;
     margin: 20px auto;
     padding: 25px;
@@ -49,3 +54,7 @@ input {
     border-bottom:1px solid #444; 
     cursor: pointer;
 }
+
+* {
+    text-decoration: none;
+  }

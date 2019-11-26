@@ -12,18 +12,10 @@ class FormReview extends Component {
         if (this.props.formReducer.selfgoal === undefined || this.props.formReducer.connectionname === undefined || this.props.formReducer.connectionphonenumber === undefined){
         alert("Please fill out form completely")
         console.log('Adding feedback', this.props.formReducer);
-         } else this.props.dispatch({ type: 'UPDATE_PROFILE', payload: this.props.formReducer})
+         } else 
+        this.props.dispatch({ type: 'UPDATE_PROFILE', payload: this.props.formReducer})
         this.props.dispatch({ type: "CLEAR_FORM" });
-        this.props.history.push('/dashboard');   
-    }
-
-    changeTitleAndDescription(movie, state) {
-        if ( state.title === '' || state.description === ''){
-            alert("Please edit completely")
-        console.log('in changeTitleAndDescription', movie.movie_id);
-        } else this.props.dispatch({ type: 'EDIT_MOVIE', payload: { id: movie.movie_id, ...this.state } })
-        this.props.history.push('/details')
-
+        this.props.history.push('/trackerpage');   
     }
 
     goBackToFormFour = () => {
@@ -49,10 +41,10 @@ class FormReview extends Component {
                         <li>Time saved per day(on average): {this.props.formReducer.timesaved} hour/s</li>
                     </ul>
                     <Button variant="contained" color="secondary" onClick={this.goBackToFormFour} >Edit</Button>
-                    <Link to="/dashboard"> <Button variant="contained" color="primary" startIcon={<SaveIcon />} onClick={this.handleSubmit} >Save Profile</Button></Link>
+                    <Button variant="contained" color="primary" startIcon={<SaveIcon />} onClick={this.handleSubmit} >Save Profile</Button>
                 </header>   
-                <pre>{JSON.stringify(this.state, null, 2)}</pre>
-                <pre>{JSON.stringify( this.props.formReducer, null, 2)}</pre>
+                {/* <pre>{JSON.stringify(this.state, null, 2)}</pre> */}
+                {/* <pre>{JSON.stringify( this.props.formReducer, null, 2)}</pre> */}
             </div>
         );
     }

@@ -22,12 +22,17 @@ const UserPage = (props) => (
     </h1>
     <p>Congrats on making a change in your life!  To get the most value out of this app it is recommended to create connection goals.  Do so by clicking below! </p>
 
-    <Link to= "/formone"><Button onClick={() => (goToFormOne())} variant="contained" size="small" color="primary">
+    <Link to= "/formone"><Button onClick={() => (goToFormOne())} variant="outlined" size="small" color="secondary">
       Create Connection Goals
+    </Button></Link>
+    <p>If your goals are up to date, please continue to the dashboard.</p>
+    <Link to= "/dashboard"><Button onClick={() => (goToFormOne())} variant="outlined" size="small" color="primary">
+      Dashboard
     </Button></Link>
 
     <p>Your ID is: {props.user.id}</p>
-    <LogOutButton className="log-in" />
+    {/* <LogOutButton className="log-in" /> */}
+    <Button variant="outlined" size="small" color="secondary" onClick={() => props.dispatch({ type: 'LOGOUT' })}>Log Out</Button>
   </div>
 );
 

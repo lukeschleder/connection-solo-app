@@ -8,6 +8,7 @@ function* updateUserGoalsSaga(action) {
     console.log(action.payload);
     try {
         const updatedUser = yield axios.put(`/api/updated`, action.payload);
+        yield put({type:'FETCH_USER'});
         console.log(updatedUser);
     } catch (error) {
         console.log('error fetching updated user', error);

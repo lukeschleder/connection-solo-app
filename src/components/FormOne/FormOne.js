@@ -6,6 +6,7 @@ import MenuItem from '@material-ui/core/MenuItem';
 import FormHelperText from '@material-ui/core/FormHelperText';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
+import './FormOne.css';
 
 
 
@@ -42,16 +43,17 @@ class FormOne extends Component {
                 <header className="Home-header">
                     <p className="formOne">What is something you would like to do more often that will help you connect with self?</p>
                     <form onSubmit={this.compileFeedback}>
-                        <TextField
+                        <TextField className="textField"
+
                             onChange={this.inputChangeHandler}
                             defaultValue={this.props.formReducer.selfgoal}
                             label="Comments"
-                            className="textField"
-                            multiline
+                            multiline="true"
                             rows="5"
-                            margin="normal"
+                            // margin="normal"
                             variant="outlined"
                             placeholder=""
+                            fullWidth="true"
                         />
                         <br/>
                         <Button color="secondary"onClick={this.goBackToHome}variant="contained" type="submit">Back</Button>
@@ -59,7 +61,7 @@ class FormOne extends Component {
                     </form>
                 </header>
                 <br />
-                <pre>{JSON.stringify( this.state, null, 2)}</pre>
+                {/* <pre>{JSON.stringify( this.state, null, 2)}</pre> */}
             </div>
 
         );
