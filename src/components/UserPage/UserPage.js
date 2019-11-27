@@ -17,32 +17,42 @@ const UserPage = (props) => (
 
 
   <div>
-    <h1 id="welcome">
-      Welcome, {props.user.username}!
+    <Card>
+      
+        <CardMedia
+          // className={classes.media}
+          style={{ height: 200 }}
+          image="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80"
+          title="Contemplative Reptile"
+        />
+          
+    </Card>
+        <h1 id="welcome">
+          Welcome, {props.user.username}!
     </h1>
-    <p>Congrats on making a change in your life!  To get the most value out of this app it is recommended to create connection goals.  Do so by clicking below! </p>
+        <p>Congrats on making a change in your life!  To get the most value out of this app it is recommended to create connection goals.  Do so by clicking below! </p>
 
-    <Link to= "/formone"><Button onClick={() => (goToFormOne())} variant="outlined" size="small" color="secondary">
-      Create Connection Goals
+        <Link to="/formone"><Button onClick={() => (goToFormOne())} variant="outlined" size="small" color="secondary">
+          Create Connection Goals
     </Button></Link>
-    <p>If your goals are up to date, please continue to the dashboard.</p>
-    <Link to= "/dashboard"><Button onClick={() => (goToFormOne())} variant="outlined" size="small" color="primary">
-      Dashboard
+        <p>If your goals are up to date, please continue to the dashboard.</p>
+        <Link to="/dashboard"><Button onClick={() => (goToFormOne())} variant="outlined" size="small" color="primary">
+          Dashboard
     </Button></Link>
 
-    <p>Your ID is: {props.user.id}</p>
-    {/* <LogOutButton className="log-in" /> */}
-    <Button variant="outlined" size="small" color="secondary" onClick={() => props.dispatch({ type: 'LOGOUT' })}>Log Out</Button>
+        <p>Your ID is: {props.user.id}</p>
+        {/* <LogOutButton className="log-in" /> */}
+        <Button variant="outlined" size="small" color="secondary" onClick={() => props.dispatch({ type: 'LOGOUT' })}>Log Out</Button>
   </div>
-);
-
-// Instead of taking everything from state, we just want the user info.
-// if you wanted you could write this code like this:
-// const mapStateToProps = ({user}) => ({ user });
+      );
+      
+      // Instead of taking everything from state, we just want the user info.
+      // if you wanted you could write this code like this:
+// const mapStateToProps = ({user}) => ({user});
 const mapStateToProps = state => ({
-  user: state.user,
-});
-
+        user: state.user,
+    });
+    
 // this allows us to use <App /> in index.js
 // const mapReduxStateToProps = reduxState => ({
 //   reduxState

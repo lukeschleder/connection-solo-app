@@ -9,7 +9,7 @@ const AboutPage = () => (
   <div>
     <div>
       <p>
-        This about page is for anyone to read!
+        The opposite of addiction is not sobriety.  The opposite of addiction is Connection.  This app was built with compassion and understanding for the individuals, relationships, and families it affects.  
       </p>
     </div>
   </div>

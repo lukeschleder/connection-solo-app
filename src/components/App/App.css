@@ -1,5 +1,5 @@
 body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0px;
     
 }
@@ -16,7 +16,7 @@ body {
 form {
     text-align: center;
     color: black;
-    background-color: white;
+    background-color: whitesmoke;
     width: 75%;
     height: 50%;
     margin: 20px auto;

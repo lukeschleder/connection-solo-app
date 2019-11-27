@@ -48,7 +48,7 @@ class FormOne extends Component {
                             onChange={this.inputChangeHandler}
                             defaultValue={this.props.formReducer.selfgoal}
                             label="Comments"
-                            multiline="true"
+                            multiline='true'
                             rows="5"
                             // margin="normal"
                             variant="outlined"

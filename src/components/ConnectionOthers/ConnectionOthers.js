@@ -10,7 +10,7 @@ import moment from 'moment';
 
 
 
-class Meditations extends Component {
+class ConnectionOthers extends Component {
 randomizerFunc=(min, max)=>{
     console.log("random")
     return Math.floor(Math.random() * (max + 1 - min) + min)
@@ -66,4 +66,4 @@ randomizerFunc=(min, max)=>{
 
 const mapReduxStateToProps = state => state;
 
-export default connect(mapReduxStateToProps)(withRouter(Meditations));
+export default connect(mapReduxStateToProps)(withRouter(ConnectionOthers));

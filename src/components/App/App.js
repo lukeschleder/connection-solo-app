@@ -24,6 +24,8 @@ import FormReview from '../FormReview/FormReview';
 import TrackerPage from '../TrackerPage/TrackerPage';
 import Dashboard from '../Dashboard/Dashboard';
 import Meditations from '../Meditations/Meditations';
+import ConnectionOthers from '../ConnectionOthers/ConnectionOthers';
+import ConnectionSelf from '../ConnectionSelf/ConnectionSelf';
 
 import './App.css';
 
@@ -102,6 +104,16 @@ class App extends Component {
               exact
               path="/dailymeditations"
               component={Meditations}
+            />
+            <ProtectedRoute
+              exact
+              path="/connectionself"
+              component={ConnectionSelf}
+            />
+            <ProtectedRoute
+              exact
+              path="/connectionothers"
+              component={ConnectionOthers}
             />
             {/* If none of the other routes matched, we will show a 404. */}
             <Route render={() => <h1>404</h1>} />

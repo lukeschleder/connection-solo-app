@@ -42,8 +42,11 @@ class LoginPage extends Component {
           </h2>
         )}
 
-        <form onSubmit={this.login}>
+        <form onSubmit={this.login}> 
           <i className="fas fa-link fa-4x"></i>
+          <br/>
+          <br/>
+          <br/>
           <h1>Login</h1>
           <div>
             <label htmlFor="username">

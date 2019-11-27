@@ -43,6 +43,9 @@ class RegisterPage extends Component {
         )}
         <form onSubmit={this.registerUser}>
         <i class="fas fa-link fa-4x"></i>
+        <br/>
+          <br/>
+          <br/>
           <h1>Register</h1>
           <div>
             <label htmlFor="username">
