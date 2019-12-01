@@ -30,10 +30,10 @@ class TrackerPage extends Component {
                     <div class="container">
                         <div class="box"><i class="fas fa-clock fa-2x"></i><p>{moment(this.props.user.timestamp_sobriety_start).fromNow()}</p></div>
                         <div class="box"><i class="fas fa-hourglass-half fa-2x"></i><p>{moment().diff(this.props.user.timestamp_sobriety_start, 'hours')} hours ago</p></div>
-                        <div class="box"><i class="fas fa-money-bill-alt fa-2x"></i><p>${moment().diff(this.props.user.timestamp_sobriety_start, 'days') * (this.props.user.money_savedperday)} dollars saved</p></div>
+                        <div class="box"><i class="fas fa-money-bill-alt fa-2x"></i><p>${this.props.user.timestamp_sobriety_start && moment().diff(this.props.user.timestamp_sobriety_start, 'days') * (this.props.user.money_savedperday)} dollars saved</p></div>
                         <div class="box"><i class="fas fa-history fa-2x"></i><p>{moment().diff(this.props.user.timestamp_sobriety_start, 'days') * (this.props.user.time_savedperday)} hours saved</p></div>
                     </div>
-                    <p>Sobriety Start Date: {this.props.user.timestamp_sobriety_start.toString().split("T")[0]}</p>
+                    <p>Sobriety Start Date: {this.props.user.timestamp_sobriety_start && this.props.user.timestamp_sobriety_start.toString().split("T")[0]}</p>
                     <br/>
                     <Button variant="contained" color="secondary" onClick={this.goBackToFormOne} >Reset Trackers</Button>
                     {/* <p>{moment(this.props.user.timestamp_sobriety_start).fromNow()}</p>

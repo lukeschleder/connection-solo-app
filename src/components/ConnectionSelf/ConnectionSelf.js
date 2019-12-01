@@ -50,8 +50,10 @@ randomizerFunc=(min, max)=>{
                                 <br/>
                                 <h3>Books:</h3>
                                 <br/>
-                                <li></li>
-                                <li><a href="https://www.betterhelp.com/" target="_blank">betterhelp</a></li>
+                                <li><a href="https://www.amazon.com/Reconciliation-Healing-Thich-Nhat-Hanh/dp/1935209647/ref=sr_1_2?crid=1R1KAISHRAH8O&keywords=thich+nhat+hanh+reconciliation&qid=1575148484&sprefix=thich+nhat+hanh+rec%2Cdigital-text%2C167&sr=8-2">Reconciliation: Healing the Inner Child</a>Based on Dharma talks by Zen Master Thich Nhat Hanh and insights from participants in retreats for healing the inner child, this book is an exciting contribution to the growing trend of using Buddhist practices to encourage mental health and wellness. Reconciliation focuses on the theme of mindful awareness of our emotions and healing our relationships, as well as meditations and exercises to acknowledge and transform the hurt that many of us experienced as children. The book shows how anger, sadness, and fear can become joy and tranquility by learning to breathe with, explore, meditate, and speak about our strong emotions. Reconciliation offers specific practices designed to bring healing and release for people suffering from childhood trauma. The book is written for a wide audience and accessible to people of all backgrounds and spiritual traditions.</li>
+                                <li><a href="https://www.amazon.com/This-Naked-Mind-Discover-Happiness-ebook/dp/B077VTJC8P" target="_blank">This Naked Mind</a> - This Naked Mind has ignited a movement across the country, helping thousands of people forever change their relationship with alcohol.</li>
+                                <li><a href=""></a></li>
+                                <li><a href=""></a></li>
                              </Typography>
                         </CardContent>
                     </CardActionArea>
