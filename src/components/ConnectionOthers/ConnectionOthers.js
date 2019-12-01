@@ -52,6 +52,7 @@ class ConnectionOthers extends Component {
                                     <h3>Books:</h3>
                                     <br/>
                                     <li></li>
+                                    <li><a href="https://www.amazon.com/Addicted-Monkey-Mind-Programming-Sabotages/dp/0692978593/ref=pd_sbs_14_6/138-2615827-6955624?_encoding=UTF8&pd_rd_i=0692978593&pd_rd_r=7a1bbb6b-37a2-43f6-a384-7a0083e2ffc2&pd_rd_w=uzJrM&pd_rd_wg=1YlO5&pf_rd_p=5873ae95-9063-4a23-9b7e-eafa738c2269&pf_rd_r=4M2BZCT54XAR9BGRK3BQ&psc=1&refRID=4M2BZCT54XAR9BGRK3BQ">Addicted to the Monkey Mind: Change the Programming That Sabotages Your Life 1st Edition</a> - In his book, J.F. Benoist—a visionary thought leader in the fields of addiction treatment and personal development—uses the journeys of two relatable characters to teach you how to develop a powerful new mindset and finally break the pattern of negative self-talk.</li>
                                     <li><a href="https://www.betterhelp.com/" target="_blank">betterhelp</a></li>
                                  </Typography>
                             </CardContent>
