@@ -53,10 +53,10 @@ class FormOne extends Component {
                             // margin="normal"
                             variant="outlined"
                             placeholder=""
-                            // fullWidth="true"
+                        // fullWidth="true"
                         />
-                        <br/>
-                        <Button color="secondary"onClick={this.goBackToHome}variant="contained" type="submit">Back</Button>
+                        <br />
+                        <Button color="secondary" onClick={this.goBackToHome} variant="contained" type="submit">Back</Button>
                         <Button variant="contained" type="submit">Next</Button>
                     </form>
                 </header>

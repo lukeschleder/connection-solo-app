@@ -9,13 +9,13 @@ import SaveIcon from '@material-ui/icons/Save';
 class FormReview extends Component {
 
     handleSubmit = () => {
-        if (this.props.formReducer.selfgoal === undefined || this.props.formReducer.connectionname === undefined || this.props.formReducer.connectionphonenumber === undefined){
-        alert("Please fill out form completely")
-        console.log('Adding feedback', this.props.formReducer);
-         } else 
-        this.props.dispatch({ type: 'UPDATE_PROFILE', payload: this.props.formReducer})
+        if (this.props.formReducer.selfgoal === undefined || this.props.formReducer.connectionname === undefined || this.props.formReducer.connectionphonenumber === undefined) {
+            alert("Please fill out form completely")
+            console.log('Adding feedback', this.props.formReducer);
+        } else
+            this.props.dispatch({ type: 'UPDATE_PROFILE', payload: this.props.formReducer })
         this.props.dispatch({ type: "CLEAR_FORM" });
-        this.props.history.push('/trackerpage');   
+        this.props.history.push('/dashboard');
     }
 
     goBackToFormFour = () => {
@@ -28,21 +28,21 @@ class FormReview extends Component {
                 <header className="Home-header">
                     <h1 className="Review-Title">Review</h1>
                     <ul id="reviewList">
-                        <li>Self Connection Goal: {this.props.formReducer.selfgoal}</li> 
-                        <br/>
+                        <li>Self Connection Goal: {this.props.formReducer.selfgoal}</li>
+                        <br />
                         <li>Connection Person: {this.props.formReducer.connectionname}</li>
-                        <br/>
+                        <br />
                         <li>Connection Phone Number: {this.props.formReducer.connectionphonenumber}</li>
-                        <br/>
+                        <br />
                         <li>Sobriety Start Date: {this.props.formReducer.sobrietystartdate.toString().split("GMT")[0]}</li>
-                        <br/>
+                        <br />
                         <li>Money saved per day(on average): ${this.props.formReducer.moneysaved}.00</li>
-                        <br/>
+                        <br />
                         <li>Time saved per day(on average): {this.props.formReducer.timesaved} hour/s</li>
                     </ul>
                     <Button variant="contained" color="secondary" onClick={this.goBackToFormFour} >Edit</Button>
                     <Button variant="contained" color="primary" startIcon={<SaveIcon />} onClick={this.handleSubmit} >Save Profile</Button>
-                </header>   
+                </header>
                 {/* <pre>{JSON.stringify(this.state, null, 2)}</pre> */}
                 {/* <pre>{JSON.stringify( this.props.formReducer, null, 2)}</pre> */}
             </div>

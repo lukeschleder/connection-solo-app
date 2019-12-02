@@ -38,7 +38,7 @@ class ConnectionOthers extends Component {
                             <CardMedia
                                 // className={classes.media}
                                 style={{ height: 200 }}
-                                image="https://previews.123rf.com/images/psychoshadowmaker/psychoshadowmaker1603/psychoshadowmaker160300001/54992048-two-trees-in-front-of-each-other-with-their-roots-growing-together-business-collaboration-teamwork-a.jpg"
+                                image="https://i.pinimg.com/originals/5c/22/0c/5c220c2523df13208b515c54593ced2d.jpg"
                                 title="Contemplative Reptile"
                             />
                             <CardContent>
@@ -46,7 +46,7 @@ class ConnectionOthers extends Component {
                                     Current Connection Person: <br/><p className="goalsLI">{this.props.user.others_connection_name}</p>
                                     Phone Number: <br/><p className="goalsLI"><a href="tel:{this.props.user.others_connection_phonenumber}">{this.props.user.others_connection_phonenumber}</a></p>
                                     <br/>
-                                    <Button variant="outlined" color="secondary" onClick={this.goBackToFormOne} >Reset Goals</Button>
+                                    <Button variant="contained" color="secondary" onClick={this.goBackToFormOne} >Reset Goals</Button>
                                  </Typography>
                                  
                                 <Typography variant="body2" color="textSecondary" component="p">

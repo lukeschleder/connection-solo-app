@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
 import { TextField } from '@material-ui/core';
 
 class RegisterPage extends Component {
@@ -20,7 +20,7 @@ class RegisterPage extends Component {
         },
       });
     } else {
-      this.props.dispatch({type: 'REGISTRATION_INPUT_ERROR'});
+      this.props.dispatch({ type: 'REGISTRATION_INPUT_ERROR' });
     }
   } // end registerUser
 
@@ -42,10 +42,9 @@ class RegisterPage extends Component {
           </h2>
         )}
         <form onSubmit={this.registerUser}>
-        <i class="fas fa-link fa-4x"></i>
-        <br/>
-          <br/>
-          <br/>
+          <i class="fas fa-link fa-4x"></i>
+          <br />
+          <br />
           <h1>Register</h1>
           <div>
             <label htmlFor="username">
@@ -88,7 +87,7 @@ class RegisterPage extends Component {
           <button
             type="button"
             className="link-button"
-            onClick={() => {this.props.dispatch({type: 'SET_TO_LOGIN_MODE'})}}
+            onClick={() => { this.props.dispatch({ type: 'SET_TO_LOGIN_MODE' }) }}
           >
             Login
           </button>

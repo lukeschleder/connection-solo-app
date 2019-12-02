@@ -49,31 +49,31 @@ class FormFour extends Component {
             <div className="App">
                 <header className="Home-header">
                     <p className="formOne">How much money did you spend on your substance/ addiction issue on average per day?  How much time on average per day?</p>
-                    
-                        <form onSubmit={this.compileFeedback} noValidate autoComplete="off">   
-                            <div>
-                                <TextField
-                                    id="outlined-name"
-                                    label="Average money"
-                                    className="formTwo"
-                                    onChange={this.inputMoneyHandler}
-                                    defaultValue={this.props.formReducer.moneysaved}
-                                    placeholders="money"
-                                    margin="normal"
-                                    variant="outlined"
-                                />
-                                <TextField
-                                    id="outlined-uncontrolled"
-                                    label="Average hours"
-                                    defaultValue={this.props.formReducer.timesaved}
-                                    placeholder="time"
-                                    className="formTwo"
-                                    onChange={this.inputHoursHandler}
-                                    margin="normal"
-                                    variant="outlined"
-                                />
-                            </div>
-                            <Button onClick={this.goBackToFormThree}variant="contained" color="secondary"type="submit">Back</Button>
+
+                    <form onSubmit={this.compileFeedback} noValidate autoComplete="off">
+                        <div>
+                            <TextField
+                                id="outlined-name"
+                                label="Average money"
+                                className="formTwo"
+                                onChange={this.inputMoneyHandler}
+                                defaultValue={this.props.formReducer.moneysaved}
+                                placeholders="money"
+                                margin="normal"
+                                variant="outlined"
+                            />
+                            <TextField
+                                id="outlined-uncontrolled"
+                                label="Average hours"
+                                defaultValue={this.props.formReducer.timesaved}
+                                placeholder="time"
+                                className="formTwo"
+                                onChange={this.inputHoursHandler}
+                                margin="normal"
+                                variant="outlined"
+                            />
+                        </div>
+                        <Button onClick={this.goBackToFormThree} variant="contained" color="secondary" type="submit">Back</Button>
                         <Button variant="contained" type="submit">Next</Button>
                     </form>
                 </header>

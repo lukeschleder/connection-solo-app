@@ -46,7 +46,6 @@ class LoginPage extends Component {
           <i className="fas fa-link fa-4x"></i>
           <br/>
           <br/>
-          <br/>
           <h1>Login</h1>
           <div>
             <label htmlFor="username">

@@ -13,10 +13,6 @@ import './TrackerPage.css';
 
 class TrackerPage extends Component {
 
-    // componentDidMount () => {
-
-    // }
-
     goBackToFormOne = () => {
         alert("You are not you're mistakes!")
         this.props.history.push('/formone');
@@ -33,14 +29,9 @@ class TrackerPage extends Component {
                         <div class="box" id="meditationsBox"><i class="fas fa-money-bill-alt fa-2x"></i><p>${this.props.user.timestamp_sobriety_start && moment().diff(this.props.user.timestamp_sobriety_start, 'days') * (this.props.user.money_savedperday)} dollars saved</p></div>
                         <div class="box" id="trackerBox"><i class="fas fa-history fa-2x"></i><p>{moment().diff(this.props.user.timestamp_sobriety_start, 'days') * (this.props.user.time_savedperday)} hours saved</p></div>
                     </div>
-                    <p>Sobriety Start Date: {this.props.user.timestamp_sobriety_start && this.props.user.timestamp_sobriety_start.toString().split("T")[0]}</p>
-                    <br/>
-                    <Button variant="outlined" color="secondary" onClick={this.goBackToFormOne} >Reset Trackers</Button>
-                    {/* <p>{moment(this.props.user.timestamp_sobriety_start).fromNow()}</p>
-                    <p>{moment().diff(this.props.user.timestamp_sobriety_start, 'days')} days ago</p>
-                    <p>{moment().diff(this.props.user.timestamp_sobriety_start, 'hours')} hours ago</p>
-                    <p>${moment().diff(this.props.user.timestamp_sobriety_start, 'days') * (this.props.user.money_savedperday)} dollars saved</p>
-                    <p>{moment().diff(this.props.user.timestamp_sobriety_start, 'days') * (this.props.user.time_savedperday)} hours saved</p> */}
+                    <p id="date">Sobriety Start Date: {this.props.user.timestamp_sobriety_start && this.props.user.timestamp_sobriety_start.toString().split("T")[0]}</p>
+                    <br />
+                    <Button variant="contained" color="secondary" onClick={this.goBackToFormOne} >Reset Trackers</Button>
                 </header>
                 <br />
             </div>

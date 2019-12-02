@@ -49,30 +49,30 @@ class FormTwo extends Component {
             <div className="App">
                 <header className="Home-header">
                     <p className="formOne">Is there anyone you would like to contact more often?</p>
-                    
-                        <form onSubmit={this.compileFeedback} noValidate autoComplete="off">   
-                            <div>
-                                <TextField
-                                    id="outlined-name"
-                                    label="Name"
-                                    className="formTwo"
-                                    onChange={this.inputNameHandler}
-                                    defaultValue={this.props.formReducer.connectionname}
-                                    margin="normal"
-                                    variant="outlined"
-                                />
-                                <TextField
-                                    id="outlined-uncontrolled"
-                                    label="Phone Number"
-                                    placeholder="123-456-7890"
-                                    className="formTwo"
-                                    onChange={this.inputPhoneNumberHandler}
-                                    defaultValue={this.props.formReducer.connectionphonenumber}
-                                    margin="normal"
-                                    variant="outlined"
-                                />
-                            </div>
-                            <Button color="secondary"onClick={this.goBackToFormOne}variant="contained" type="submit">Back</Button>
+
+                    <form onSubmit={this.compileFeedback} noValidate autoComplete="off">
+                        <div>
+                            <TextField
+                                id="outlined-name"
+                                label="Name"
+                                className="formTwo"
+                                onChange={this.inputNameHandler}
+                                defaultValue={this.props.formReducer.connectionname}
+                                margin="normal"
+                                variant="outlined"
+                            />
+                            <TextField
+                                id="outlined-uncontrolled"
+                                label="Phone Number"
+                                placeholder="123-456-7890"
+                                className="formTwo"
+                                onChange={this.inputPhoneNumberHandler}
+                                defaultValue={this.props.formReducer.connectionphonenumber}
+                                margin="normal"
+                                variant="outlined"
+                            />
+                        </div>
+                        <Button color="secondary" onClick={this.goBackToFormOne} variant="contained" type="submit">Back</Button>
                         <Button variant="contained" type="submit">Next</Button>
                     </form>
                 </header>

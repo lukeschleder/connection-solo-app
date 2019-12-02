@@ -45,7 +45,7 @@ randomizerFunc=(min, max)=>{
                             <Typography gutterBottom variant="h7" component="h2">
                                 Current Self Goal: <br/><br/><li className="goalsLI">{this.props.user.self_connection}</li>
                                 <br/>
-                                <Button variant="outlined" color="secondary" onClick={this.goBackToFormOne} >Reset Goals</Button>
+                                <Button variant="contained" color="secondary" onClick={this.goBackToFormOne} >Reset Goals</Button>
                              </Typography>
                             <Typography variant="body2" color="textSecondary" component="p">
                                 <h2>Podcasts:</h2>
