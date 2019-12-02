@@ -77,7 +77,7 @@ class FormTwo extends Component {
                     </form>
                 </header>
                 <br />
-                <pre>{JSON.stringify(this.state, null, 2)}</pre>
+                {/* <pre>{JSON.stringify(this.state, null, 2)}</pre> */}
             </div>
 
         );

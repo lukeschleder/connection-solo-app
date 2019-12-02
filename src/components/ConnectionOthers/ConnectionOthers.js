@@ -23,6 +23,11 @@ class ConnectionOthers extends Component {
         goBackToDashboard = () => {
             this.props.history.push('/dashboard');
         }
+
+        goBackToFormOne = () => {
+            // alert("You are not you're mistakes!")
+            this.props.history.push('/formone');
+        }
     
         render() {
             return (
@@ -40,7 +45,10 @@ class ConnectionOthers extends Component {
                                 <Typography gutterBottom variant="h7" component="h2">
                                     Current Connection Person: <br/><p className="goalsLI">{this.props.user.others_connection_name}</p>
                                     Phone Number: <br/><p className="goalsLI"><a href="tel:{this.props.user.others_connection_phonenumber}">{this.props.user.others_connection_phonenumber}</a></p>
+                                    <br/>
+                                    <Button variant="outlined" color="secondary" onClick={this.goBackToFormOne} >Reset Goals</Button>
                                  </Typography>
+                                 
                                 <Typography variant="body2" color="textSecondary" component="p">
                                     <h2>Podcasts:</h2>
                                     <li><a href="https://podcasts.apple.com/us/podcast/thich-nhat-hanh-dharma-talks/id480787112" target="_blank">Thich Nhat Hanh Dharma Talks</a> - Dharma talks from the Zen Master Thich Nhat Hanh. One of the best known and most respected Zen masters in the world today, poet, and peace and human rights activist, Thich Nhat Hanh has led an extraordinary life.</li>
@@ -53,6 +61,7 @@ class ConnectionOthers extends Component {
                                     <li><a href="https://www.amazon.com/Mindful-Relationship-Habits-Practices-Connection/dp/1983507946/ref=sr_1_4?crid=2VJUSPD5UG4R3&keywords=relationship+books&qid=1575218939&s=books&sprefix=relationship%2Cstripbooks%2C158&sr=1-4" target="_blank">Mindful Relationship Habits: 25 Practices for Couples to Enhance Intimacy, Nurture Closeness, and Grow a Deeper Connection</a> - In Mindful Relationship Habits, Wall Street Journal bestselling authors S.J. Scott and Barrie Davenport show you how to have a more mindful relationship by applying 25 specific practices. These habits will help you be more present with one another, communicate better, avoid divisive arguments, and understand how to respond to one another's needs in a more loving, empathic, and conscious way.</li>
                                     <li><a href="https://www.amazon.com/Youre-Not-Crazy-Codependent-Addiction/dp/0615533469/ref=sr_1_3?crid=4J7QPS5WPT6Q&keywords=you%27re+not+crazy+-+you%27re+codependent&qid=1575219433&s=books&sprefix=you%27re+not+crazy%2Cstripbooks%2C153&sr=1-3" target="_blank">You're Not Crazy - You're Codependent.: What Everyone Affected by Addiction, Abuse, Trauma or Toxic Shaming Must know to have peace in their lives</a> - If your life has been affected by addiction (yours or someone else's), abuse, trauma or toxic shaming, you may also be struggling with another invisible problem - codependency. Without your even being aware of the connection to the above issues, it has created additional life-long challenges such as endless guilt, anxiety, perfectionism, need to control, depression, a history of dysfunctional relationships and much more. This easy to understand, interactive book will reveal how codependency has sobotaged you, the lies it created in your beliefs and the truths that expose them. Also included is a Guide to Recovery using simple acts of mindfulness to overcome harmful habits in your thinking, actions and choices that are keeping you from having peace. Once you understand you are not crazy, just coping with the deep-seated effects of codependency, you will be free to create the life you were always meant to have.</li>
                                     {/* <li><a href="" target="_blank"></a> </li> */}
+                                    <br/>
                                     <h2>Online Resources for connection with others:</h2>
                                     <br/>
                                     <li><a href="https://www.samhsa.gov/find-help/national-helpline" target="_blank">SAMHSA</a> - 24/7 SAMHSA’s National Helpline is a free, confidential, 24/7, 365-day-a-year treatment referral and information service (in English and Spanish) for individuals and families facing mental and/or substance use disorders.</li>

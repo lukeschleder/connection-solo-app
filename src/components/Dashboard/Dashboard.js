@@ -7,15 +7,6 @@ import moment from 'moment';
 
 class Dashboard extends Component {
 
-    // randomizerFunc=(min, max)=>{
-    //     console.log("random")
-    //     return Math.floor(Math.random() * (max + 1 - min) + min)
-    // }
-    //     componentDidMount () {
-    //          const randomID = this.randomizerFunc(1,5);
-    //         this.props.dispatch({ type: 'GET_MEDITATION', payload: {id: randomID}})
-    //     }
-
 
     gotoTrackerPage =() => {
         this.props.history.push('/trackerpage');
@@ -39,6 +30,7 @@ class Dashboard extends Component {
     render() {
         return (
             <>
+            {/* <h2>{this.props.user.username}'s Dashboard!</h2> */}
             <div>Today's Date: {moment().toISOString().toString().split("T")[0]}</div>
             <div class="container">
                         <div class="box" id="trackerBox" onClick={this.gotoTrackerPage}><p>Tracker Page</p><i class="fas fa-clock fa-2x"></i></div>

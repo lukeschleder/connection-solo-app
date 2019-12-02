@@ -24,6 +24,11 @@ randomizerFunc=(min, max)=>{
         this.props.history.push('/dashboard');
     }
 
+    goBackToFormOne = () => {
+        // alert("You are not you're mistakes!")
+        this.props.history.push('/formone');
+    }
+
     render() {
         return (
             <div className="App">
@@ -40,6 +45,7 @@ randomizerFunc=(min, max)=>{
                             <Typography gutterBottom variant="h7" component="h2">
                                 Current Self Goal: <br/><br/><li className="goalsLI">{this.props.user.self_connection}</li>
                                 <br/>
+                                <Button variant="outlined" color="secondary" onClick={this.goBackToFormOne} >Reset Goals</Button>
                              </Typography>
                             <Typography variant="body2" color="textSecondary" component="p">
                                 <h2>Podcasts:</h2>

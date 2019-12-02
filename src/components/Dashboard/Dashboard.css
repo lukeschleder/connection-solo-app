@@ -1,13 +1,13 @@
 #trackerBox {
-    background-color: midnightblue;
+    background-color: #2B3E42;
 }
 #meditationsBox {
-    background-color: chartreuse;
+    background-color: #747E80;
     /* background-image: url(wet_rocks.jpeg),; */
 }
 #selfBox {
-    background-color: cyan;
+    background-color: #77BED2;
 }
 #othersBox {
-    background-color: darkorchid;
+    background-color: #F2583E;
 }
