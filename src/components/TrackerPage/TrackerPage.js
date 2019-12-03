@@ -22,7 +22,7 @@ class TrackerPage extends Component {
         return (
             <div className="App">
                 <header className="Home-header">
-                    <h2>My Trackers</h2>
+                    <h2>{this.props.user.username}'s Trackers</h2>
                     <div class="container">
                         <div class="box" id="othersBox"><i class="fas fa-clock fa-2x"></i><p>{moment(this.props.user.timestamp_sobriety_start).fromNow()}</p></div>
                         <div class="box" id="selfBox"><i class="fas fa-hourglass-half fa-2x"></i><p>{moment().diff(this.props.user.timestamp_sobriety_start, 'hours')} hours ago</p></div>

@@ -1,9 +1,12 @@
-#trackerBox {
+/* #trackerBox {
     background-color: midnightblue;
+    border: black;
+      border-width: 15px;
 }
 #meditationsBox {
     background-color: chartreuse;
-    /* background-image: url(wet_rocks.jpeg),; */
+    border: black;
+      border-width: 15px;
 }
 #selfBox {
     background-color: cyan;
@@ -11,3 +14,16 @@
 #othersBox {
     background-color: darkorchid;
 }
+.homeButtons {
+    margin-top: 10px;
+}
+.button {
+     margin-top: 100px;
+}
+
+.MuiButton-containedSizeSmall {
+    margin-top:10px;
+}
+.aboveButton {
+    margin-bottom: 10px;
+} */

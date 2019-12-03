@@ -9,13 +9,13 @@
 
 .nav {
   overflow: hidden;
-  background-color: white;
+  background-color: #77BED2;
 }
 
 .nav-link {
   float: left;
   color: black;
-  background-color: white;
+  background-color: #77BED2;
   text-align: center;
   padding: 24px 10px;
   text-decoration: none;
@@ -29,7 +29,7 @@
 }
 
 .nav-link:hover {
-  background-color: lightgrey;
+  background-color: whitesmoke;
 }
 
 .nav-right {
@@ -40,5 +40,8 @@
   text-align: center;
   padding-top: 10px;
   padding-left: 10px;
-  color: #D5E1DD;
+  color: white;
+}
+.fa-link {
+  color: black;
 }

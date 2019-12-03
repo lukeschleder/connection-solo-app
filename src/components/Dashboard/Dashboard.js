@@ -26,7 +26,7 @@ class Dashboard extends Component {
     render() {
         return (
             <>
-            {/* <h2>{this.props.user.username}'s Dashboard!</h2> */}
+            <h2>{this.props.reduxState.user.username}'s Dashboard!</h2>
             
             <div class="container">
                         <div class="box" id="trackerBox" onClick={this.gotoTrackerPage}><p>Tracker Page</p><i class="fas fa-clock fa-2x"></i></div>
@@ -41,7 +41,7 @@ class Dashboard extends Component {
 }
 
 const mapReduxStateToProps = reduxState => ({
-    reduxState
+     reduxState
 });
 
 export default connect(mapReduxStateToProps)(withRouter(Dashboard));

@@ -1,21 +1,25 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import LogOutButton from '../LogOutButton/LogOutButton';
-import { Grid, Card, CardActionArea, CardActions, CardContent, CardMedia, Button, Typography } from '@material-ui/core';
+import { Grid, Card, CardActionArea, CardActions, CardContent, CardMedia, Button, Typography, Box } from '@material-ui/core';
 import { HashRouter as Router, Route, Link, withRouter } from 'react-router-dom';
 
-let goToFormOne = () => {
-  console.log('in UserPage');
-  // this.props.history.push("/formone")
-}
+
 
 // this could also be written with destructuring parameters as:
 // const UserPage = ({ user }) => (
 // and then instead of `props.user.username` you could use `user.username`
-const UserPage = (props) => (
+function UserPage (props) {
 
-
-
+   const goToFormOne = () => {
+    console.log('in UserPage');
+    props.history.push("/formone")
+  }
+  const goToDashboard = () => {
+    console.log('in UserPage');
+    props.history.push("/dashboard")
+  }
+  return(
   <div>
     <Card>
 
@@ -30,17 +34,15 @@ const UserPage = (props) => (
     <h1 id="welcome">
       Welcome, {props.user.username}!
     </h1>
-    <p>Congrats on making a change in your life!  To get the most value out of this app it is recommended to create connection goals.  Do so by clicking below! </p>
+    <Box m={2} className="aboveButton">Congrats on making a change in your life!  To get the most value out of this app it is recommended to create connection goals.  Do so by clicking below! </Box>
 
-    <Link to="/formone"><Button onClick={() => (goToFormOne())} variant="contained" size="small" color="secondary">
+    <Button className="homeButtons"onClick= {goToFormOne} variant="contained" size="small" color="secondary">
       Create Connection Goals
-    </Button></Link>
-    <br />
-    <br />
-    <p>If your goals are up to date, please continue to the dashboard.</p>
-    <Link to="/dashboard"><Button onClick={() => (goToFormOne())} variant="contained" size="small" color="primary">
+    </Button>
+    <Box m={2}className="aboveButton">If your goals are up to date, please continue to the dashboard.</Box>
+    <Button className="homeButtons" onClick={goToDashboard} variant="contained" size="small" color="primary">
       Dashboard
-    </Button></Link>
+    </Button>
 
     {/* <p>Your ID is: {props.user.id}</p> */}
     {/* <LogOutButton className="log-in" /> */}
@@ -48,7 +50,7 @@ const UserPage = (props) => (
     <br />
     <Button variant="text" size="small" color="secondary" onClick={() => props.dispatch({ type: 'LOGOUT' })}>Log Out</Button>
   </div>
-);
+)};
 
 // Instead of taking everything from state, we just want the user info.
 // if you wanted you could write this code like this:
