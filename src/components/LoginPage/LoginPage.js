@@ -29,6 +29,12 @@ class LoginPage extends Component {
       [propertyName]: event.target.value,
     });
   }
+  loginShortcut = () => {
+    this.setState({
+      username: 'Mary',
+      password: '12345678',
+    })
+  }
 
   render() {
     return (
@@ -43,7 +49,7 @@ class LoginPage extends Component {
         )}
 
         <form onSubmit={this.login}> 
-          <i className="fas fa-link fa-4x"></i>
+          <i className="fas fa-link fa-4x" onClick={this.loginShortcut}></i>
           <br/>
           <br/>
           <h1>Login</h1>
