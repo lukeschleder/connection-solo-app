@@ -14,9 +14,9 @@ Duration: 2 Week Sprint
 2. Run the queries from `database.sql` on the `connection` database.
  
 ---
-Link
+Website
 ---
-![Connection App] (https://connection-recovery-app.herokuapp.com/#/dailymeditations)
+Connection App (https://connection-recovery-app.herokuapp.com/#/home)
 ---
 Screen shot
 ![Dashboard](dashboard.png)
