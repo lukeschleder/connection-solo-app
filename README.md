@@ -16,6 +16,7 @@ Duration: 2 Week Sprint
 ---
 Link
 ---
+![Connection App] (https://connection-recovery-app.herokuapp.com/#/dailymeditations)
 ---
 Screen shot
 ![Dashboard](dashboard.png)
