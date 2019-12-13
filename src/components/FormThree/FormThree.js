@@ -18,6 +18,7 @@ import moment from 'moment';
 
 
 class FormThree extends Component {
+    // captures data and sends to redux state
     state = {
         date: this.date,
     }
@@ -56,19 +57,6 @@ class FormThree extends Component {
                         <div>
                             <MuiPickersUtilsProvider utils={DateFnsUtils}>
                                 <Grid container justify="space-around">
-                                    {/* <KeyboardDatePicker
-                                        disableToolbar
-                                        variant="inline"
-                                        format="MM/dd/yyyy"
-                                        margin="normal"
-                                        id="date-picker-inline"
-                                        label="Date picker inline"
-                                        value={this.state.date}
-                                        onChange={this.handleDateChange}
-                                        KeyboardButtonProps={{
-                                            'aria-label': 'change date',
-                                        }}
-                                    /> */}
                                     <KeyboardDatePicker
                                         margin="normal"
                                         id="date-picker-dialog"

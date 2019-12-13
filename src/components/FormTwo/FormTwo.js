@@ -9,7 +9,7 @@ import Select from '@material-ui/core/Select';
 
 
 class FormTwo extends Component {
-
+    // captures data and sends to redux state
     state = {
         name: '',
         phonenumber: '',

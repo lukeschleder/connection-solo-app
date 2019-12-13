@@ -12,7 +12,7 @@ import './TrackerPage.css';
 
 
 class TrackerPage extends Component {
-
+    // routes back to form one to reset goals
     goBackToFormOne = () => {
         alert("You are not you're mistakes!")
         this.props.history.push('/formone');

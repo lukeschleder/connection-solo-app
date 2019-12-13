@@ -11,15 +11,6 @@ import './ConnectionSelf.css';
 
 
 class ConnectionSelf extends Component {
-randomizerFunc=(min, max)=>{
-    console.log("random")
-    return Math.floor(Math.random() * (max + 1 - min) + min)
-}
-    componentDidMount () {
-         const randomID = this.randomizerFunc(1,5);
-        this.props.dispatch({ type: 'GET_MEDITATION', payload: {id: randomID}})
-    }
-
     goBackToDashboard = () => {
         this.props.history.push('/dashboard');
     }

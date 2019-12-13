@@ -7,6 +7,7 @@ function* formSaga() {
 function* updateUserGoalsSaga(action) {
     console.log(action.payload);
     try {
+        // put request to updated router
         const updatedUser = yield axios.put(`/api/updated`, action.payload);
         yield put({type:'FETCH_USER'});
         console.log(updatedUser);

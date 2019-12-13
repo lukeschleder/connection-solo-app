@@ -7,7 +7,7 @@ function* meditationSaga() {
 function* getMeditation(action) {
     try {
         console.log(action.payload);
-        
+        // get route to meditations
         const meditation = yield axios.get(`/api/meditations/${action.payload.id}`);
         console.log(meditation);
         yield put ({type: 'RANDOM_MEDITATION', payload: meditation.data})

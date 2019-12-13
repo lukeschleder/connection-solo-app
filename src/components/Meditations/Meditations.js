@@ -11,15 +11,17 @@ import moment from 'moment';
 
 
 class Meditations extends Component {
+    // creates random number
 randomizerFunc=(min, max)=>{
     console.log("random")
     return Math.floor(Math.random() * (max + 1 - min) + min)
 }
+    // grabs random meditation when component loads
     componentDidMount () {
          const randomID = this.randomizerFunc(1,8);
         this.props.dispatch({ type: 'GET_MEDITATION', payload: {id: randomID}})
     }
-
+    // routes to dashboard
     goBackToDashboard = () => {
         this.props.history.push('/dashboard');
     }

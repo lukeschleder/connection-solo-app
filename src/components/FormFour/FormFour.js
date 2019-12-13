@@ -9,7 +9,7 @@ import Select from '@material-ui/core/Select';
 
 
 class FormFour extends Component {
-
+    // captures data and sends to redux state
     state = {
         moneySpent: '',
         timeSpent: '',

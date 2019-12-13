@@ -1,4 +1,5 @@
 const formReducer = (state = {}, action) => {
+    // captures input data and holds in redux state
     console.log("state", state);
     if (action.type === "SELF_GOAL") {
         return{ ...state, selfgoal: action.payload}

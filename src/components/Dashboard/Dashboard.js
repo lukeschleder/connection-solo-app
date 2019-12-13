@@ -7,7 +7,7 @@ import moment from 'moment';
 
 class Dashboard extends Component {
 
-
+    // routes to whichever div is clicked
     gotoTrackerPage =() => {
         this.props.history.push('/trackerpage');
     }

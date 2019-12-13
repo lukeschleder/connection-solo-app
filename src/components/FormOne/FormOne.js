@@ -11,7 +11,7 @@ import './FormOne.css';
 
 
 class FormOne extends Component {
-
+    // captures data and sends to redux state
     state = {
         selfgoal: '',
     }

@@ -3,7 +3,7 @@ const pool = require('../modules/pool');
 const router = express.Router();
 
 /**
- * GET route template
+ * GET route 
  */
 router.get('/:id', (req, res) => {
     console.log(req.params);
@@ -22,13 +22,6 @@ router.get('/:id', (req, res) => {
             console.log('GET error in random meditation', error);
             res.sendStatus(500);
         })
-});
-
-/**
- * POST route template
- */
-router.post('/', (req, res) => {
-
 });
 
 module.exports = router;
