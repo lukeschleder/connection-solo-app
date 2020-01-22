@@ -5,7 +5,7 @@
 
 Duration: 2 Week Sprint
 
-- For this solo project challenge I built a mobile first web application!  Connection was built to help users that are struggling with addiction, substance abuse, or making change in their lives.  It allows users to track how long they have been making a change, how much money has been saved, and how much time they have saved.  There is a meditation/ reading page that randomly generates a reading from a local database.  They are also reminded of ways the user has already submitted to connect with themselves and others.  Resources for recovery from substance abuse are also listed, including podcasts, books, and online mental health resources.   
+- For this solo project challenge I built a mobile first web application!  Connection was built to assist users that are struggling with addiction, substance abuse, or making change in their lives.  It allows users to track how long they have been making a change, how much money has been saved, and how much time they have saved.  There is a meditation/ reading page that randomly generates a reading from a local database.  They are also reminded of ways the user has already submitted to connect with themselves and others.  Resources for recovery from substance abuse are also listed, including podcasts, books, and online mental health resources.   
 
 
 ## Database Setup
